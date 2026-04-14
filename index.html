@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,25 +50,25 @@
     }
 
     .page {
-      max-width: 1050px;
+      max-width: 1150px;
       margin: 0 auto;
       padding: 48px 24px 72px;
     }
 
     .hero {
       display: grid;
-      grid-template-columns: 320px minmax(0, 1fr);
-      gap: 40px;
+      grid-template-columns: minmax(320px, 42%) minmax(0, 1fr);
+      gap: 44px;
       align-items: start;
       margin-bottom: 48px;
     }
 
     .hero-image img {
       width: 100%;
-      max-width: 320px;
+      max-width: none;
       height: auto;
       display: block;
-      border-radius: 10px;
+      border-radius: 0;
     }
 
     .hero-text h1 {
@@ -98,6 +97,8 @@
     .bio p {
       margin: 0 0 18px 0;
       font-size: 1.02rem;
+      text-align: justify;
+      text-justify: inter-word;
     }
 
     .section {
@@ -149,8 +150,8 @@
       }
 
       .hero-image img {
+        width: 100%;
         max-width: 100%;
-        width: min(100%, 360px);
       }
 
       .hero-text h1 {
@@ -159,6 +160,7 @@
 
       .bio p {
         font-size: 1rem;
+        text-align: justify;
       }
     }
   </style>
@@ -183,11 +185,11 @@
         <div class="bio">
           <p>
             I am a postdoctoral researcher at the Simons Institute at UC Berkeley, where I am supervised by Peter Bartlett. Previously, I was a PhD student in the Computing and Mathematical Sciences (CMS) department at Caltech, where I was supervised by Babak Hassibi. My thesis was awarded the Bhansali Family Doctoral Prize in Computer Science, which is awarded by the CMS department to a single outstanding dissertation in computer science each year.
-
-          <p>
-            My research interests lie in machine learning and optimization. I am particulalry interested in i) optimization, generalization, and uncertainity quantification in deep learning, and ii) online learning, reinforcement learning, time-series forecasting, and optimal control.
           </p>
 
+          <p>
+            My research interests lie in machine learning and optimization. I am particularly interested in i) optimization, generalization, and uncertainty quantification in deep learning, and ii) online learning, reinforcement learning, time-series forecasting, and optimal control.
+          </p>
 
           <p>
             For more information, please see my <a href="./Gautam_Goel_CV.pdf">CV</a>.
@@ -201,7 +203,6 @@
       <p class="section-subtitle">Sorted in decreasing chronological order.</p>
 
       <ol class="papers-list">
-
         <li>
           <strong>Can a Transformer Represent a Kalman Filter?</strong>
           with Peter Bartlett.
