@@ -1,114 +1,318 @@
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   <style>
-	   
-     a:link {
-	  color:green;
-	  background-color: transparent;
-	  text-decoration: none;
-     }
 
-     a:visited {
-	  color: green;
-	  background-color: transparent;
-	  text-decoration: none;
-     }
-	   
-      td {
-         font-family: helvetica;
-	 font-weight: lighter;
-         font-size: 100%
-         padding-top:10px;
-	 padding-bottom:10px;
-	 padding-right:20px;  
-	 padding-left:20px;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gautam Goel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --text: #111111;
+      --muted: #666666;
+      --border: #e8e8e8;
+      --accent: #1f6f43;
+      --bg: #ffffff;
+      --paper-bg: #fcfcfc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .page {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 48px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .hero-text h1 {
+      margin: 0 0 10px 0;
+      font-size: clamp(2rem, 3vw, 2.7rem);
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-meta {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .hero-meta p {
+      margin: 0 0 4px 0;
+    }
+
+    .contact {
+      margin: 18px 0 24px 0;
+      font-size: 1rem;
+    }
+
+    .bio p {
+      margin: 0 0 18px 0;
+      font-size: 1.02rem;
+    }
+
+    .section {
+      margin-top: 42px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section h2 {
+      margin: 0 0 6px 0;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      margin: 0 0 18px 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .papers-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .papers-list li {
+      margin-bottom: 16px;
+      padding: 8px 0;
+    }
+
+    .papers-list strong {
+      font-weight: 600;
+    }
+
+    .paper-note {
+      color: var(--muted);
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        padding: 28px 18px 48px;
       }
 
-   </style>
-	
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 36px;
+      }
+
+      .hero-image img {
+        max-width: 100%;
+        width: min(100%, 360px);
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .bio p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<br><br>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-image">
+        <img src="./PXL_20241109_055318332.jpg" alt="Portrait of Gautam Goel">
+      </div>
 
-<table  align = "center" style = "border: 0px solid #666; padding-right:0px; border-bottom: 0px">
-      <tr>
-	      
-	<td  width="50%" valign="top"> 
-            <br>
-            <dd><h2><b> Gautam Goel </b></h2></dd>
-            <dd> Simons Institute for the Theory of Computing </dd>
-            <dd> University of California at Berkeley </dd>
-            <br>
-            <dd> <b> Email: </b> ggoel@berkeley.edu </dd>
-		    
-	<td width="50%" valign="top">
-	    <br>
-            <img width="500px" src="./PXL_20241109_055318332.jpg" align="right">
-	</td>
-      </tr>
-		
-</table>
-<table align ="center" style = "border: 0px solid #666; padding-right:0px; border-top: 0px">
+      <div class="hero-text">
+        <h1>Gautam Goel</h1>
 
-	<tr> 
-	<td>
-	    <br>
-            <dd style= "text-align: justify"> I am a postdoctoral researcher at the Simons Institute at UC Berkeley, where I am part of the the Foundations of Data Science Institute (FODSI). I am extremely fortunate to be supervised by Peter Bartlett. I am broadly interested in machine learning, optimization, and control. </dd>
-	    <br>
-	    <dd style= "text-align: justify"> I am currently studying deep autoregressive architectures such as Transfomers, which underpin Large Language Models (LLMs). I am exploring several theoretical questions associated with these models, including how gradient descent behaves when training these models, how model performance scales with training data (neural scaling laws), and how these models can be used for system identification, Kalman filtering, and control.   </dd>    
-	    <br>	
-	    <dd style= "text-align: justify"> Before moving to Berkeley I was a PhD student in the Computing and Mathematical Sciences (CMS) department at Caltech, where I was advised by Babak Hassibi. My thesis was awarded the Bhansali Family Doctoral Prize in Computer Science, which is awarded by the CMS department to a single outstanding dissertation in computer science each year. </dd>	
-            <br>
-	    <dd style= "text-align: justify"> For more information, please see my <a href=./Gautam_Goel_CV.pdf>CV</a>. </dd>
-	
-	</td>
-      </tr>
-</table>
+        <div class="hero-meta">
+          <p>Simons Institute for the Theory of Computing</p>
+          <p>University of California, Berkeley</p>
+        </div>
 
-<table width = "1750" align = "center" style = "border: 0px solid #666; padding-right:0px; border-top: 0px">
-      <tr>
-         <td>
-            <br>
-	    <br>
-            <b> Papers. </b> Sorted in decreasing chronological order.
-		 <ol>
-			<br>
-			<li> <b>  Learning Kalman Filters as Linear RNNs. </b> with  Sultan Daniels, Wentinn Liao, Gireeja Ranade, Saagar Sanghavi, and Anant Sahai.</b> Preprint. </li>
-			<br>
-			<li> <b>  Can a Transformer Represent a Kalman Filter? </b> with  Peter Bartlett.</b> Preprint. [<a href="https://arxiv.org/abs/2312.06937">arXiv</a>]</li>
-			<br>
-			<li> <b>  Best of Both Worlds in Online Control: Competitive Ratio and Policy Regret </b> with  Naman Agarwal, Karan Singh, and Elad Hazan.</b> L4DC 2023. [<a href="https://arxiv.org/abs/2211.11219">arXiv</a>]</li>
-	                <br>
-			<li> <b>  Measurement-Feedback Control with Optimal Data-Dependent Regret </b> with Babak Hassibi.</b> Preprint. [<a href="https://arxiv.org/abs/2209.06425">arXiv</a>]</li>
-	                <br>
-			<li> <b>  Online Estimation and Control with Optimal Pathlength Regret</b> with Babak Hassibi.</b> L4DC 2022. [<a href="https://arxiv.org/abs/2110.12544">arXiv</a>]</li>
-		        <br>
-		        <li> <b>  Competitive Control</b> with Babak Hassibi.  Transactions of Automatic Control. [<a href="https://arxiv.org/abs/2107.13657">arXiv</a>]</li>
-	                <br>
-	                <li> <b>  The Power of Linear Controllers in LQR Control</b> with Babak Hassibi. CDC 2022 <b> (Invited Session on Non-Asymptotic Learning and Control of Dynamical Systems). </b> [<a href="https://arxiv.org/abs/2002.02574">arXiv</a>] </li>
-	                <br>
-			<li> <b>  Regret-Optimal Estimation and Control</b> with Babak Hassibi. Transactions of Automatic Control <b> (Special Issue on Learning and Control). </b> [<a href="https://arxiv.org/abs/2106.12097">arXiv</a>]</li>
-			<br>
-			<li> <b>  Regret-Optimal Full-Information Control</b> with Oron Sabag, Sahin Lale, and Babak Hassibi. ACC 2021. [<a href="https://arxiv.org/abs/2105.01244">arXiv</a>]</li>
-			<br>
-			<li> <b>  Regret-Optimal Measurement-Feedback Control</b> with Babak Hassibi. L4DC 2021. [<a href="https://arxiv.org/abs/2011.12785">arXiv</a>]</li>
-			<br>
-			<li> <b>  Online Optimization with Predictions and Non-Convex Losses</b> with Yiheng Lin and Adam Wierman. SIGMETRICS 2020. [<a href="https://arxiv.org/abs/1911.03827">arXiv</a>]</li>
-			<br>
-			<li> <b>  Beyond Online Balanced Descent: An Optimal Algorithm for Smoothed Online Optimization</b> with Yiheng Lin. Haoyuan Sun, and Adam Wierman. NeurIPS 2019 <b> (Spotlight Presentation).</b> [<a href="https://arxiv.org/abs/1905.12776">arXiv</a>]</li>
-			<br>
-			<li> <b>  An Online Algorithm for Smoothed Regression and LQR Control</b> with Adam Wierman. AISTATS 2019. [<a href="https://arxiv.org/abs/1810.10132">arXiv</a>]</li>
-			<br>
-			<li> <b>  Smoothed Online Convex Optimization in High Dimensions via Online Balanced Descent</b> with Niangjun Chen and Adam Wierman. COLT 2018. [<a href="https://arxiv.org/abs/1803.10366">arXiv</a>]</li>
-			<br>		  
-		        <li> <b>  Thinking Fast and Slow: Optimization Decomposition across Timescales</b> with Niangjun Chen and Adam Wierman. CDC 2017. [<a href="https://arxiv.org/abs/1704.07785">arXiv</a>]</li>
-		</ol>   
-         </td>
-      </tr>
-     
+        <p class="contact"><strong>Email:</strong> <a href="mailto:ggoel@berkeley.edu">ggoel@berkeley.edu</a></p>
 
-</table>
-         
+        <div class="bio">
+          <p>
+            I am a postdoctoral researcher at the Simons Institute at UC Berkeley, where I am part of the Foundations of Data Science Institute (FODSI). I am extremely fortunate to be supervised by Peter Bartlett. I am broadly interested in machine learning, optimization, and control.
+          </p>
+
+          <p>
+            I am currently studying deep autoregressive architectures such as Transformers, which underpin large language models (LLMs). I am exploring several theoretical questions associated with these models, including how gradient descent behaves when training them, how model performance scales with training data, and how these models can be used for system identification, Kalman filtering, and control.
+          </p>
+
+          <p>
+            Before moving to Berkeley, I was a PhD student in the Computing and Mathematical Sciences department at Caltech, where I was advised by Babak Hassibi. My thesis was awarded the Bhansali Family Doctoral Prize in Computer Science, which is awarded by the CMS department to a single outstanding dissertation in computer science each year.
+          </p>
+
+          <p>
+            For more information, please see my <a href="./Gautam_Goel_CV.pdf">CV</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Papers</h2>
+      <p class="section-subtitle">Sorted in decreasing chronological order.</p>
+
+      <ol class="papers-list">
+        <li>
+          <strong>Learning Kalman Filters as Linear RNNs.</strong>
+          with Sultan Daniels, Wentinn Liao, Gireeja Ranade, Saagar Sanghavi, and Anant Sahai.
+          <span class="paper-note">Preprint.</span>
+        </li>
+
+        <li>
+          <strong>Can a Transformer Represent a Kalman Filter?</strong>
+          with Peter Bartlett.
+          <span class="paper-note">Preprint.</span>
+          [<a href="https://arxiv.org/abs/2312.06937">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Best of Both Worlds in Online Control: Competitive Ratio and Policy Regret.</strong>
+          with Naman Agarwal, Karan Singh, and Elad Hazan.
+          <span class="paper-note">L4DC 2023.</span>
+          [<a href="https://arxiv.org/abs/2211.11219">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Measurement-Feedback Control with Optimal Data-Dependent Regret.</strong>
+          with Babak Hassibi.
+          <span class="paper-note">Preprint.</span>
+          [<a href="https://arxiv.org/abs/2209.06425">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Online Estimation and Control with Optimal Pathlength Regret.</strong>
+          with Babak Hassibi.
+          <span class="paper-note">L4DC 2022.</span>
+          [<a href="https://arxiv.org/abs/2110.12544">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Competitive Control.</strong>
+          with Babak Hassibi.
+          <span class="paper-note">IEEE Transactions on Automatic Control.</span>
+          [<a href="https://arxiv.org/abs/2107.13657">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>The Power of Linear Controllers in LQR Control.</strong>
+          with Babak Hassibi.
+          <span class="paper-note">CDC 2022.</span>
+          <strong>(Invited Session on Non-Asymptotic Learning and Control of Dynamical Systems).</strong>
+          [<a href="https://arxiv.org/abs/2002.02574">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Regret-Optimal Estimation and Control.</strong>
+          with Babak Hassibi.
+          <span class="paper-note">IEEE Transactions on Automatic Control.</span>
+          <strong>(Special Issue on Learning and Control).</strong>
+          [<a href="https://arxiv.org/abs/2106.12097">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Regret-Optimal Full-Information Control.</strong>
+          with Oron Sabag, Sahin Lale, and Babak Hassibi.
+          <span class="paper-note">ACC 2021.</span>
+          [<a href="https://arxiv.org/abs/2105.01244">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Regret-Optimal Measurement-Feedback Control.</strong>
+          with Babak Hassibi.
+          <span class="paper-note">L4DC 2021.</span>
+          [<a href="https://arxiv.org/abs/2011.12785">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Online Optimization with Predictions and Non-Convex Losses.</strong>
+          with Yiheng Lin and Adam Wierman.
+          <span class="paper-note">SIGMETRICS 2020.</span>
+          [<a href="https://arxiv.org/abs/1911.03827">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Beyond Online Balanced Descent: An Optimal Algorithm for Smoothed Online Optimization.</strong>
+          with Yiheng Lin, Haoyuan Sun, and Adam Wierman.
+          <span class="paper-note">NeurIPS 2019.</span>
+          <strong>(Spotlight Presentation).</strong>
+          [<a href="https://arxiv.org/abs/1905.12776">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>An Online Algorithm for Smoothed Regression and LQR Control.</strong>
+          with Adam Wierman.
+          <span class="paper-note">AISTATS 2019.</span>
+          [<a href="https://arxiv.org/abs/1810.10132">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Smoothed Online Convex Optimization in High Dimensions via Online Balanced Descent.</strong>
+          with Niangjun Chen and Adam Wierman.
+          <span class="paper-note">COLT 2018.</span>
+          [<a href="https://arxiv.org/abs/1803.10366">arXiv</a>]
+        </li>
+
+        <li>
+          <strong>Thinking Fast and Slow: Optimization Decomposition across Timescales.</strong>
+          with Niangjun Chen and Adam Wierman.
+          <span class="paper-note">CDC 2017.</span>
+          [<a href="https://arxiv.org/abs/1704.07785">arXiv</a>]
+        </li>
+      </ol>
+    </section>
+  </main>
 </body>
-
+</html>
