@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+h1 {
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.profile {
+  --photo-width: 312px;
+  --mobile-photo-width: 39%;
+  display: grid;
+  grid-template-columns: var(--photo-width) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-text p {
+  margin: 0;
+}
+
+.profile-text hr {
+  margin: 16px 0;
+  border: 0;
+  border-top: 1px solid #a0a0a0;
+}
+
+a {
+  color: #0000ee;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+.cv-link {
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 24px 16px 40px;
+  }
+
+  .profile {
+    grid-template-columns: var(--mobile-photo-width) minmax(0, 1fr);
+    gap: 16px;
+  }
+}
