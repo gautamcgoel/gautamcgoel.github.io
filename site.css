@@ -25,8 +25,8 @@ h1 {
 }
 
 .profile {
-  --photo-width: 312px;
-  --mobile-photo-width: 39%;
+  --photo-width: 343.2px;
+  --mobile-photo-width: 42.9%;
   display: grid;
   grid-template-columns: var(--photo-width) minmax(0, 1fr);
   gap: 28px;
