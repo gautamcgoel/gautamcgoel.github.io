@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  max-width: 1050px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 32px 24px 48px;
 }
@@ -26,7 +26,6 @@ h1 {
 
 .profile {
   --photo-width: 411.84px;
-  --mobile-photo-width: 51.48%;
   display: grid;
   grid-template-columns: var(--photo-width) minmax(0, 1fr);
   gap: 28px;
@@ -41,6 +40,14 @@ h1 {
 
 .profile-text p {
   margin: 0;
+}
+
+.profile-text .prose {
+  text-align: justify;
+}
+
+.keep-together {
+  white-space: nowrap;
 }
 
 .profile-text hr {
@@ -68,13 +75,21 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   main {
     padding: 24px 16px 40px;
   }
 
   .profile {
-    grid-template-columns: var(--mobile-photo-width) minmax(0, 1fr);
-    gap: 16px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .portrait {
+    max-width: var(--photo-width);
+  }
+
+  .profile-text .prose {
+    text-align: left;
   }
 }
