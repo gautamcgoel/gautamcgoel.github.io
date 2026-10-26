@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  max-width: 1163px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 32px 24px 48px;
 }
@@ -25,7 +25,7 @@ h1 {
 }
 
 .profile {
-  --photo-width: 464.59px;
+  --photo-width: 411.84px;
   display: grid;
   grid-template-columns: var(--photo-width) minmax(0, 1fr);
   gap: 28px;
@@ -35,9 +35,7 @@ h1 {
 .portrait {
   display: block;
   width: 100%;
-  max-width: var(--photo-width);
   height: auto;
-  justify-self: center;
 }
 
 .profile-text p {
@@ -85,6 +83,10 @@ a:focus-visible {
   .profile {
     grid-template-columns: minmax(0, 1fr);
     gap: 24px;
+  }
+
+  .portrait {
+    max-width: var(--photo-width);
   }
 
   .profile-text .prose {
