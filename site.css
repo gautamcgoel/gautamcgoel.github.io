@@ -34,8 +34,10 @@ h1 {
 
 .portrait {
   display: block;
-  width: 100%;
+  width: calc(100% * 1122 / 1293);
+  max-width: calc(var(--photo-width) * 1122 / 1293);
   height: auto;
+  justify-self: center;
 }
 
 .profile-text p {
@@ -83,10 +85,6 @@ a:focus-visible {
   .profile {
     grid-template-columns: minmax(0, 1fr);
     gap: 24px;
-  }
-
-  .portrait {
-    max-width: var(--photo-width);
   }
 
   .profile-text .prose {
